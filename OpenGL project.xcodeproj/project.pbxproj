@@ -15,6 +15,10 @@
 		D8BAF44C21F01EEA00E39F4B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
 		D8BAF44D21F01EED00E39F4B /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
 		D8BAF44E21F01EF000E39F4B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
+		D8BAF45721F1646F00E39F4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8BAF45621F1646F00E39F4B /* main.cpp */; };
+		D8BAF45B21F1660500E39F4B /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
+		D8BAF45C21F1660800E39F4B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
+		D8BAF45D21F1660B00E39F4B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +40,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D8BAF45221F1646F00E39F4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +58,8 @@
 		D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		D8BAF44221F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 1 - Shaders and the First Triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 2 - Transforming"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BAF45621F1646F00E39F4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D8EE646C21EF7DC000717DAB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +84,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8BAF45121F1646F00E39F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAF45B21F1660500E39F4B /* libglfw.3.2.dylib in Frameworks */,
+				D8BAF45C21F1660800E39F4B /* libGLEW.2.1.0.dylib in Frameworks */,
+				D8BAF45D21F1660B00E39F4B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +102,7 @@
 			children = (
 				D89A4AFF218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44321F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
+				D8BAF45521F1646F00E39F4B /* Lesson 2 - Transforming */,
 				D89A4AFE218D651D00F6EA35 /* Products */,
 				D89A4B07218D659300F6EA35 /* Frameworks */,
 			);
@@ -87,6 +113,7 @@
 			children = (
 				D89A4AFD218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44221F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
+				D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +142,14 @@
 				D8EE646C21EF7DC000717DAB /* main.cpp */,
 			);
 			path = "Lesson 1 - Shaders and the First Triangle";
+			sourceTree = "<group>";
+		};
+		D8BAF45521F1646F00E39F4B /* Lesson 2 - Transforming */ = {
+			isa = PBXGroup;
+			children = (
+				D8BAF45621F1646F00E39F4B /* main.cpp */,
+			);
+			path = "Lesson 2 - Transforming";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +189,23 @@
 			productReference = D8BAF44221F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */;
 			productType = "com.apple.product-type.tool";
 		};
+		D8BAF45321F1646F00E39F4B /* Lesson 2 - Transforming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BAF45A21F1646F00E39F4B /* Build configuration list for PBXNativeTarget "Lesson 2 - Transforming" */;
+			buildPhases = (
+				D8BAF45021F1646F00E39F4B /* Sources */,
+				D8BAF45121F1646F00E39F4B /* Frameworks */,
+				D8BAF45221F1646F00E39F4B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lesson 2 - Transforming";
+			productName = "Lesson 2 - Transforming";
+			productReference = D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +219,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					D8BAF44121F01AF300E39F4B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D8BAF45321F1646F00E39F4B = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -185,6 +240,7 @@
 			targets = (
 				D89A4AFC218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44121F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
+				D8BAF45321F1646F00E39F4B /* Lesson 2 - Transforming */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BAF44B21F01EA100E39F4B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BAF45021F1646F00E39F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAF45721F1646F00E39F4B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +440,34 @@
 			};
 			name = Release;
 		};
+		D8BAF45821F1646F00E39F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8BAF45921F1646F00E39F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +494,15 @@
 			buildConfigurations = (
 				D8BAF44721F01AF300E39F4B /* Debug */,
 				D8BAF44821F01AF300E39F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8BAF45A21F1646F00E39F4B /* Build configuration list for PBXNativeTarget "Lesson 2 - Transforming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BAF45821F1646F00E39F4B /* Debug */,
+				D8BAF45921F1646F00E39F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
