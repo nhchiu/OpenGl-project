@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82C8CDF21F40C6700119077 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C8CDD21F40C6700119077 /* window.cpp */; };
 		D89A4B09218D659300F6EA35 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
 		D89A4B0B218D660C00F6EA35 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
 		D89A4B0D218D662100F6EA35 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
@@ -19,6 +20,12 @@
 		D8BAF45B21F1660500E39F4B /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
 		D8BAF45C21F1660800E39F4B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
 		D8BAF45D21F1660B00E39F4B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
+		D8BAF46521F2C20100E39F4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8BAF46421F2C20100E39F4B /* main.cpp */; };
+		D8BAF46921F2C22300E39F4B /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
+		D8BAF46A21F2C22600E39F4B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
+		D8BAF46B21F2C22800E39F4B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
+		D8BAF46F21F38A0600E39F4B /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8BAF46D21F38A0600E39F4B /* mesh.cpp */; };
+		D8BAF47221F393D800E39F4B /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8BAF47021F393D800E39F4B /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,9 +56,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D8BAF46021F2C20100E39F4B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D82C8CDB21F3ACC200119077 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		D82C8CDC21F3ACC200119077 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		D82C8CDD21F40C6700119077 /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		D82C8CDE21F40C6700119077 /* window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
 		D89A4AFD218D651D00F6EA35 /* Lesson 0 - Show a window */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 0 - Show a window"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89A4B00218D651D00F6EA35 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D89A4B08218D659300F6EA35 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -60,6 +80,12 @@
 		D8BAF44221F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 1 - Shaders and the First Triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 2 - Transforming"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BAF45621F1646F00E39F4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D8BAF46221F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 3 - Interpolation_Indexed Draws_Projections"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8BAF46421F2C20100E39F4B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D8BAF46D21F38A0600E39F4B /* mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
+		D8BAF46E21F38A0600E39F4B /* mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		D8BAF47021F393D800E39F4B /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		D8BAF47121F393D800E39F4B /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		D8EE646C21EF7DC000717DAB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,15 +120,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8BAF45F21F2C20100E39F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAF46921F2C22300E39F4B /* libglfw.3.2.dylib in Frameworks */,
+				D8BAF46A21F2C22600E39F4B /* libGLEW.2.1.0.dylib in Frameworks */,
+				D8BAF46B21F2C22800E39F4B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D82C8CD821F3A28B00119077 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D82C8CDC21F3ACC200119077 /* shader.frag */,
+				D82C8CDB21F3ACC200119077 /* shader.vert */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
 		D89A4AF4218D651D00F6EA35 = {
 			isa = PBXGroup;
 			children = (
 				D89A4AFF218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44321F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
 				D8BAF45521F1646F00E39F4B /* Lesson 2 - Transforming */,
+				D8BAF46321F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D89A4AFE218D651D00F6EA35 /* Products */,
 				D89A4B07218D659300F6EA35 /* Frameworks */,
 			);
@@ -114,6 +160,7 @@
 				D89A4AFD218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44221F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
 				D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */,
+				D8BAF46221F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +197,21 @@
 				D8BAF45621F1646F00E39F4B /* main.cpp */,
 			);
 			path = "Lesson 2 - Transforming";
+			sourceTree = "<group>";
+		};
+		D8BAF46321F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */ = {
+			isa = PBXGroup;
+			children = (
+				D82C8CD821F3A28B00119077 /* Shaders */,
+				D8BAF46421F2C20100E39F4B /* main.cpp */,
+				D8BAF47021F393D800E39F4B /* shader.cpp */,
+				D82C8CDD21F40C6700119077 /* window.cpp */,
+				D82C8CDE21F40C6700119077 /* window.hpp */,
+				D8BAF47121F393D800E39F4B /* shader.hpp */,
+				D8BAF46D21F38A0600E39F4B /* mesh.cpp */,
+				D8BAF46E21F38A0600E39F4B /* mesh.hpp */,
+			);
+			path = "Lesson 3 - Interpolation_Indexed Draws_Projections";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +268,23 @@
 			productReference = D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */;
 			productType = "com.apple.product-type.tool";
 		};
+		D8BAF46121F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8BAF46821F2C20100E39F4B /* Build configuration list for PBXNativeTarget "Lesson 3 - Interpolation_Indexed Draws_Projections" */;
+			buildPhases = (
+				D8BAF45E21F2C20100E39F4B /* Sources */,
+				D8BAF45F21F2C20100E39F4B /* Frameworks */,
+				D8BAF46021F2C20100E39F4B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lesson 3 - Interpolation_Indexed Draws_Projections";
+			productName = "Lesson 3 - Interpolation_Indexed Draws_Projections";
+			productReference = D8BAF46221F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +301,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					D8BAF45321F1646F00E39F4B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D8BAF46121F2C20100E39F4B = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -241,6 +323,7 @@
 				D89A4AFC218D651D00F6EA35 /* Lesson 0 - Show a window */,
 				D8BAF44121F01AF300E39F4B /* Lesson 1 - Shaders and the First Triangle */,
 				D8BAF45321F1646F00E39F4B /* Lesson 2 - Transforming */,
+				D8BAF46121F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +350,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8BAF45721F1646F00E39F4B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BAF45E21F2C20100E39F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BAF46F21F38A0600E39F4B /* mesh.cpp in Sources */,
+				D8BAF47221F393D800E39F4B /* shader.cpp in Sources */,
+				D8BAF46521F2C20100E39F4B /* main.cpp in Sources */,
+				D82C8CDF21F40C6700119077 /* window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +562,34 @@
 			};
 			name = Release;
 		};
+		D8BAF46621F2C20100E39F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8BAF46721F2C20100E39F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,6 +625,15 @@
 			buildConfigurations = (
 				D8BAF45821F1646F00E39F4B /* Debug */,
 				D8BAF45921F1646F00E39F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8BAF46821F2C20100E39F4B /* Build configuration list for PBXNativeTarget "Lesson 3 - Interpolation_Indexed Draws_Projections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8BAF46621F2C20100E39F4B /* Debug */,
+				D8BAF46721F2C20100E39F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
