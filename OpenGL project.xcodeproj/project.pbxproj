@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		D82C8CDF21F40C6700119077 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C8CDD21F40C6700119077 /* window.cpp */; };
 		D82C8CE721F6162700119077 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C8CE621F6162700119077 /* main.cpp */; };
+		D85ACCA421F810C600669B77 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA321F810C600669B77 /* main.cpp */; };
+		D85ACCB121F8112C00669B77 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA821F8112B00669B77 /* shader.cpp */; };
+		D85ACCB221F8112C00669B77 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA921F8112B00669B77 /* camera.cpp */; };
+		D85ACCB321F8112C00669B77 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCAD21F8112B00669B77 /* mesh.cpp */; };
+		D85ACCB421F8112C00669B77 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCB021F8112C00669B77 /* window.cpp */; };
+		D85ACCB521F811A800669B77 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
+		D85ACCB621F811AB00669B77 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
+		D85ACCB721F811AD00669B77 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
+		D85ACCBB21F812AD00669B77 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCB921F812AD00669B77 /* texture.cpp */; };
 		D89A4B09218D659300F6EA35 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
 		D89A4B0B218D660C00F6EA35 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
 		D89A4B0D218D662100F6EA35 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
@@ -38,6 +47,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D82C8CE221F6162700119077 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D85ACC9F21F810C600669B77 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -95,6 +113,20 @@
 		D82C8CED21F6163E00119077 /* mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
 		D82C8CEE21F6163E00119077 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		D82C8CEF21F6163F00119077 /* mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		D85ACCA121F810C600669B77 /* Lesson 5 - Textures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 5 - Textures"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85ACCA321F810C600669B77 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D85ACCA821F8112B00669B77 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		D85ACCA921F8112B00669B77 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		D85ACCAA21F8112B00669B77 /* mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		D85ACCAB21F8112B00669B77 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
+		D85ACCAC21F8112B00669B77 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+		D85ACCAD21F8112B00669B77 /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
+		D85ACCAE21F8112B00669B77 /* window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
+		D85ACCAF21F8112B00669B77 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
+		D85ACCB021F8112C00669B77 /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		D85ACCB821F8123800669B77 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		D85ACCB921F812AD00669B77 /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		D85ACCBA21F812AD00669B77 /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
 		D89A4AFD218D651D00F6EA35 /* Lesson 0 - Show a window */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 0 - Show a window"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89A4B00218D651D00F6EA35 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D89A4B08218D659300F6EA35 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -126,6 +158,16 @@
 				D8E55E6121F61BD700D04CDA /* libglfw.3.2.dylib in Frameworks */,
 				D8E55E6221F61BDA00D04CDA /* libGLEW.2.1.0.dylib in Frameworks */,
 				D8E55E6321F61BDD00D04CDA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85ACC9E21F810C600669B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85ACCB521F811A800669B77 /* libglfw.3.2.dylib in Frameworks */,
+				D85ACCB621F811AB00669B77 /* libGLEW.2.1.0.dylib in Frameworks */,
+				D85ACCB721F811AD00669B77 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +249,26 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
+		D85ACCA221F810C600669B77 /* Lesson 5 - Textures */ = {
+			isa = PBXGroup;
+			children = (
+				D85ACCA321F810C600669B77 /* main.cpp */,
+				D85ACCB921F812AD00669B77 /* texture.cpp */,
+				D85ACCBA21F812AD00669B77 /* texture.hpp */,
+				D85ACCB821F8123800669B77 /* stb_image.h */,
+				D85ACCA921F8112B00669B77 /* camera.cpp */,
+				D85ACCAF21F8112B00669B77 /* camera.hpp */,
+				D85ACCAD21F8112B00669B77 /* mesh.cpp */,
+				D85ACCAA21F8112B00669B77 /* mesh.hpp */,
+				D85ACCA821F8112B00669B77 /* shader.cpp */,
+				D85ACCAB21F8112B00669B77 /* shader.hpp */,
+				D85ACCAC21F8112B00669B77 /* Shaders */,
+				D85ACCB021F8112C00669B77 /* window.cpp */,
+				D85ACCAE21F8112B00669B77 /* window.hpp */,
+			);
+			path = "Lesson 5 - Textures";
+			sourceTree = "<group>";
+		};
 		D89A4AF4218D651D00F6EA35 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +277,7 @@
 				D8BAF45521F1646F00E39F4B /* Lesson 2 - Transforming */,
 				D8BAF46321F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE521F6162700119077 /* Lesson 4 - Camera */,
+				D85ACCA221F810C600669B77 /* Lesson 5 - Textures */,
 				D89A4AFE218D651D00F6EA35 /* Products */,
 				D89A4B07218D659300F6EA35 /* Frameworks */,
 			);
@@ -228,6 +291,7 @@
 				D8BAF45421F1646F00E39F4B /* Lesson 2 - Transforming */,
 				D8BAF46221F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE421F6162700119077 /* Lesson 4 - Camera */,
+				D85ACCA121F810C600669B77 /* Lesson 5 - Textures */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,6 +363,23 @@
 			name = "Lesson 4 - Camera";
 			productName = "Lesson 4 - Camera";
 			productReference = D82C8CE421F6162700119077 /* Lesson 4 - Camera */;
+			productType = "com.apple.product-type.tool";
+		};
+		D85ACCA021F810C600669B77 /* Lesson 5 - Textures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85ACCA721F810C600669B77 /* Build configuration list for PBXNativeTarget "Lesson 5 - Textures" */;
+			buildPhases = (
+				D85ACC9D21F810C600669B77 /* Sources */,
+				D85ACC9E21F810C600669B77 /* Frameworks */,
+				D85ACC9F21F810C600669B77 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lesson 5 - Textures";
+			productName = "Lesson 5 - Textures";
+			productReference = D85ACCA121F810C600669B77 /* Lesson 5 - Textures */;
 			productType = "com.apple.product-type.tool";
 		};
 		D89A4AFC218D651D00F6EA35 /* Lesson 0 - Show a window */ = {
@@ -381,6 +462,9 @@
 					D82C8CE321F6162700119077 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					D85ACCA021F810C600669B77 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					D89A4AFC218D651D00F6EA35 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -412,6 +496,7 @@
 				D8BAF45321F1646F00E39F4B /* Lesson 2 - Transforming */,
 				D8BAF46121F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE321F6162700119077 /* Lesson 4 - Camera */,
+				D85ACCA021F810C600669B77 /* Lesson 5 - Textures */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +511,19 @@
 				D8E55E6421F61BF400D04CDA /* shader.cpp in Sources */,
 				D8E55E6021F6168800D04CDA /* window.cpp in Sources */,
 				D8E55E6821F6A94000D04CDA /* camera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85ACC9D21F810C600669B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85ACCB121F8112C00669B77 /* shader.cpp in Sources */,
+				D85ACCB221F8112C00669B77 /* camera.cpp in Sources */,
+				D85ACCB421F8112C00669B77 /* window.cpp in Sources */,
+				D85ACCBB21F812AD00669B77 /* texture.cpp in Sources */,
+				D85ACCB321F8112C00669B77 /* mesh.cpp in Sources */,
+				D85ACCA421F810C600669B77 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +580,34 @@
 			name = Debug;
 		};
 		D82C8CE921F6162700119077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D85ACCA521F810C600669B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D85ACCA621F810C600669B77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -726,6 +852,15 @@
 			buildConfigurations = (
 				D82C8CE821F6162700119077 /* Debug */,
 				D82C8CE921F6162700119077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85ACCA721F810C600669B77 /* Build configuration list for PBXNativeTarget "Lesson 5 - Textures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85ACCA521F810C600669B77 /* Debug */,
+				D85ACCA621F810C600669B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
