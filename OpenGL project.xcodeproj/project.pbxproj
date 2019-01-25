@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		D82C8CDF21F40C6700119077 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C8CDD21F40C6700119077 /* window.cpp */; };
 		D82C8CE721F6162700119077 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C8CE621F6162700119077 /* main.cpp */; };
+		D82D556221F8D7FE00B02339 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D556121F8D7FE00B02339 /* main.cpp */; };
+		D82D557321F8D82500B02339 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D556621F8D82500B02339 /* camera.cpp */; };
+		D82D557421F8D82500B02339 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D556B21F8D82500B02339 /* mesh.cpp */; };
+		D82D557521F8D82500B02339 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D556C21F8D82500B02339 /* texture.cpp */; };
+		D82D557621F8D82500B02339 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D556F21F8D82500B02339 /* shader.cpp */; };
+		D82D557721F8D82500B02339 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D557021F8D82500B02339 /* window.cpp */; };
+		D82D557A21F8D86800B02339 /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D557821F8D86800B02339 /* light.cpp */; };
+		D82D557B21F8D8D000B02339 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0C218D662100F6EA35 /* libglfw.3.2.dylib */; };
+		D82D557C21F8D8D300B02339 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B0A218D660C00F6EA35 /* libGLEW.2.1.0.dylib */; };
+		D82D557D21F8D8D600B02339 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89A4B08218D659300F6EA35 /* OpenGL.framework */; };
+		D82D558021F96FFB00B02339 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D557E21F96FFB00B02339 /* material.cpp */; };
+		D82D558321FAAC1D00B02339 /* directional_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D558121FAAC1D00B02339 /* directional_light.cpp */; };
+		D82D558621FAB17F00B02339 /* point_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D558421FAB17E00B02339 /* point_light.cpp */; };
+		D82D558921FAE80D00B02339 /* spot_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82D558721FAE80D00B02339 /* spot_light.cpp */; };
 		D85ACCA421F810C600669B77 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA321F810C600669B77 /* main.cpp */; };
 		D85ACCB121F8112C00669B77 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA821F8112B00669B77 /* shader.cpp */; };
 		D85ACCB221F8112C00669B77 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D85ACCA921F8112B00669B77 /* camera.cpp */; };
@@ -47,6 +61,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D82C8CE221F6162700119077 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D82D555D21F8D7FE00B02339 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -113,6 +136,32 @@
 		D82C8CED21F6163E00119077 /* mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
 		D82C8CEE21F6163E00119077 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		D82C8CEF21F6163F00119077 /* mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		D82D555F21F8D7FE00B02339 /* Lesson 6 - Phong Lighting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 6 - Phong Lighting"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82D556121F8D7FE00B02339 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D82D556621F8D82500B02339 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		D82D556721F8D82500B02339 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
+		D82D556821F8D82500B02339 /* window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
+		D82D556921F8D82500B02339 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
+		D82D556A21F8D82500B02339 /* mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mesh.hpp; sourceTree = "<group>"; };
+		D82D556B21F8D82500B02339 /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mesh.cpp; sourceTree = "<group>"; };
+		D82D556C21F8D82500B02339 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		D82D556D21F8D82500B02339 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
+		D82D556E21F8D82500B02339 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		D82D556F21F8D82500B02339 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		D82D557021F8D82500B02339 /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		D82D557121F8D82500B02339 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
+		D82D557221F8D82500B02339 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+		D82D557821F8D86800B02339 /* light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = light.cpp; sourceTree = "<group>"; };
+		D82D557921F8D86800B02339 /* light.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = light.hpp; sourceTree = "<group>"; };
+		D82D557E21F96FFB00B02339 /* material.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = material.cpp; sourceTree = "<group>"; };
+		D82D557F21F96FFB00B02339 /* material.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = material.hpp; sourceTree = "<group>"; };
+		D82D558121FAAC1D00B02339 /* directional_light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = directional_light.cpp; sourceTree = "<group>"; };
+		D82D558221FAAC1D00B02339 /* directional_light.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = directional_light.hpp; sourceTree = "<group>"; };
+		D82D558421FAB17E00B02339 /* point_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point_light.cpp; sourceTree = "<group>"; };
+		D82D558521FAB17E00B02339 /* point_light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = point_light.hpp; sourceTree = "<group>"; };
+		D82D558721FAE80D00B02339 /* spot_light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spot_light.cpp; sourceTree = "<group>"; };
+		D82D558821FAE80D00B02339 /* spot_light.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spot_light.hpp; sourceTree = "<group>"; };
+		D82D558A21FB7B0A00B02339 /* constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = constants.hpp; sourceTree = "<group>"; };
 		D85ACCA121F810C600669B77 /* Lesson 5 - Textures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lesson 5 - Textures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85ACCA321F810C600669B77 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D85ACCA821F8112B00669B77 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
@@ -158,6 +207,16 @@
 				D8E55E6121F61BD700D04CDA /* libglfw.3.2.dylib in Frameworks */,
 				D8E55E6221F61BDA00D04CDA /* libGLEW.2.1.0.dylib in Frameworks */,
 				D8E55E6321F61BDD00D04CDA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82D555C21F8D7FE00B02339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82D557B21F8D8D000B02339 /* libglfw.3.2.dylib in Frameworks */,
+				D82D557C21F8D8D300B02339 /* libGLEW.2.1.0.dylib in Frameworks */,
+				D82D557D21F8D8D600B02339 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +308,38 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
+		D82D556021F8D7FE00B02339 /* Lesson 6 - Phong Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				D82D558421FAB17E00B02339 /* point_light.cpp */,
+				D82D558521FAB17E00B02339 /* point_light.hpp */,
+				D82D558721FAE80D00B02339 /* spot_light.cpp */,
+				D82D558821FAE80D00B02339 /* spot_light.hpp */,
+				D82D558121FAAC1D00B02339 /* directional_light.cpp */,
+				D82D558221FAAC1D00B02339 /* directional_light.hpp */,
+				D82D556621F8D82500B02339 /* camera.cpp */,
+				D82D556721F8D82500B02339 /* camera.hpp */,
+				D82D556B21F8D82500B02339 /* mesh.cpp */,
+				D82D556A21F8D82500B02339 /* mesh.hpp */,
+				D82D556F21F8D82500B02339 /* shader.cpp */,
+				D82D557121F8D82500B02339 /* shader.hpp */,
+				D82D557221F8D82500B02339 /* Shaders */,
+				D82D556E21F8D82500B02339 /* stb_image.h */,
+				D82D556C21F8D82500B02339 /* texture.cpp */,
+				D82D556921F8D82500B02339 /* texture.hpp */,
+				D82D556D21F8D82500B02339 /* Textures */,
+				D82D557021F8D82500B02339 /* window.cpp */,
+				D82D556821F8D82500B02339 /* window.hpp */,
+				D82D556121F8D7FE00B02339 /* main.cpp */,
+				D82D558A21FB7B0A00B02339 /* constants.hpp */,
+				D82D557E21F96FFB00B02339 /* material.cpp */,
+				D82D557F21F96FFB00B02339 /* material.hpp */,
+				D82D557821F8D86800B02339 /* light.cpp */,
+				D82D557921F8D86800B02339 /* light.hpp */,
+			);
+			path = "Lesson 6 - Phong Lighting";
+			sourceTree = "<group>";
+		};
 		D85ACCA221F810C600669B77 /* Lesson 5 - Textures */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +369,7 @@
 				D8BAF46321F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE521F6162700119077 /* Lesson 4 - Camera */,
 				D85ACCA221F810C600669B77 /* Lesson 5 - Textures */,
+				D82D556021F8D7FE00B02339 /* Lesson 6 - Phong Lighting */,
 				D89A4AFE218D651D00F6EA35 /* Products */,
 				D89A4B07218D659300F6EA35 /* Frameworks */,
 			);
@@ -292,6 +384,7 @@
 				D8BAF46221F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE421F6162700119077 /* Lesson 4 - Camera */,
 				D85ACCA121F810C600669B77 /* Lesson 5 - Textures */,
+				D82D555F21F8D7FE00B02339 /* Lesson 6 - Phong Lighting */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +456,23 @@
 			name = "Lesson 4 - Camera";
 			productName = "Lesson 4 - Camera";
 			productReference = D82C8CE421F6162700119077 /* Lesson 4 - Camera */;
+			productType = "com.apple.product-type.tool";
+		};
+		D82D555E21F8D7FE00B02339 /* Lesson 6 - Phong Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82D556521F8D7FE00B02339 /* Build configuration list for PBXNativeTarget "Lesson 6 - Phong Lighting" */;
+			buildPhases = (
+				D82D555B21F8D7FE00B02339 /* Sources */,
+				D82D555C21F8D7FE00B02339 /* Frameworks */,
+				D82D555D21F8D7FE00B02339 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lesson 6 - Phong Lighting";
+			productName = "Lesson 6 - Phong Lighting";
+			productReference = D82D555F21F8D7FE00B02339 /* Lesson 6 - Phong Lighting */;
 			productType = "com.apple.product-type.tool";
 		};
 		D85ACCA021F810C600669B77 /* Lesson 5 - Textures */ = {
@@ -462,6 +572,9 @@
 					D82C8CE321F6162700119077 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					D82D555E21F8D7FE00B02339 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					D85ACCA021F810C600669B77 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -497,6 +610,7 @@
 				D8BAF46121F2C20100E39F4B /* Lesson 3 - Interpolation_Indexed Draws_Projections */,
 				D82C8CE321F6162700119077 /* Lesson 4 - Camera */,
 				D85ACCA021F810C600669B77 /* Lesson 5 - Textures */,
+				D82D555E21F8D7FE00B02339 /* Lesson 6 - Phong Lighting */,
 			);
 		};
 /* End PBXProject section */
@@ -511,6 +625,24 @@
 				D8E55E6421F61BF400D04CDA /* shader.cpp in Sources */,
 				D8E55E6021F6168800D04CDA /* window.cpp in Sources */,
 				D8E55E6821F6A94000D04CDA /* camera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82D555B21F8D7FE00B02339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82D557621F8D82500B02339 /* shader.cpp in Sources */,
+				D82D558921FAE80D00B02339 /* spot_light.cpp in Sources */,
+				D82D557321F8D82500B02339 /* camera.cpp in Sources */,
+				D82D557521F8D82500B02339 /* texture.cpp in Sources */,
+				D82D557721F8D82500B02339 /* window.cpp in Sources */,
+				D82D558021F96FFB00B02339 /* material.cpp in Sources */,
+				D82D558621FAB17F00B02339 /* point_light.cpp in Sources */,
+				D82D557A21F8D86800B02339 /* light.cpp in Sources */,
+				D82D556221F8D7FE00B02339 /* main.cpp in Sources */,
+				D82D558321FAAC1D00B02339 /* directional_light.cpp in Sources */,
+				D82D557421F8D82500B02339 /* mesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +712,34 @@
 			name = Debug;
 		};
 		D82C8CE921F6162700119077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D82D556321F8D7FE00B02339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D82D556421F8D7FE00B02339 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -852,6 +1012,15 @@
 			buildConfigurations = (
 				D82C8CE821F6162700119077 /* Debug */,
 				D82C8CE921F6162700119077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82D556521F8D7FE00B02339 /* Build configuration list for PBXNativeTarget "Lesson 6 - Phong Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82D556321F8D7FE00B02339 /* Debug */,
+				D82D556421F8D7FE00B02339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
