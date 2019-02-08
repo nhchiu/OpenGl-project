@@ -17,7 +17,7 @@
 		<key>Lesson 2 - Transforming.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Lesson 3 - Interpolation_Indexed Draws_Projections.xcscheme_^#shared#^_</key>
 		<dict>
@@ -37,6 +37,11 @@
 		<key>Lesson 6 - Phong Lighting.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Lesson 7 - Model Importing.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
 	</dict>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>D82D555E21F8D7FE00B02339</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D82D558E21FB7F1A00B02339</key>
 		<dict>
 			<key>primary</key>
 			<true/>
